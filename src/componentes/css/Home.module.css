@@ -1,0 +1,53 @@
+.home{
+
+    background-image: url(../../assets/img/Fundo_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 60px 0px 60px;
+    gap: 100px;
+
+    & .texto{
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+        font-size: 20px;
+        width:50%;
+
+        & button{
+            padding: 10px 10px;
+            width: 90%;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: #0F7A50;
+            color: #FFF;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid black;
+            margin-bottom: 20px;
+
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .home{
+        
+        & img{
+            display: none;
+        }
+
+    }
+    
+
+
+}

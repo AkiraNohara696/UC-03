@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+button a{
+    color: #fff;
+}
+
+button a:hover,
+button a:visited,
+button a:active{
+    color: #fff;
+}
+
+:root {
+  --header-h: 88px; /* ajuste conforme seu header */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    
+
+    & img{
+
+        width: 200px;
+    
+    }
+
+    & .links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    }
+
+    & a{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    & button{
+
+        padding: 10px 60px;
+        border-radius: 10px;
+        background-color: #0F7A50;
+        color: #FFF;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    
+    header{
+
+    & .des{
+        display: none;
+    }
+
+
+}
+
+
+}

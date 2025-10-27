@@ -1,0 +1,69 @@
+.Servico{
+
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px 120px 60px;
+    gap: 60px;
+
+    h1{
+        font-size: 40px;
+    }
+
+    & .ordem{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        & .card{
+            border: 5px solid #0F7A50;
+            border-radius: 10px;
+            padding: 40px  40px 40px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+
+            & h2{
+                margin-top: 10%;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            & p{
+                margin-top: 10%;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 520;
+            }
+
+            & button{
+                margin-top: 10%;
+                font-size: 16px;
+                padding: 10px 90px;
+                border-radius: 10px;
+                background-color: #0F7A50;
+                color: #FFF;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .Servico{
+        & .ordem{
+            flex-direction: column;
+        }
+    }
+
+}

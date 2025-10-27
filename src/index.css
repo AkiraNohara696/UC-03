@@ -1,0 +1,7 @@
+html { scroll-behavior: smooth; }
+
+/* empurra o conteúdo para baixo do header fixo */
+body { padding-top: var(--header-h); }
+
+/* quando clicar nos links de âncora, a seção não fica escondida atrás do header */
+section { scroll-margin-top: calc(var(--header-h) + 10px); }

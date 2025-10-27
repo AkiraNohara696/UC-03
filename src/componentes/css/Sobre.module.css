@@ -1,0 +1,74 @@
+.sobre{
+
+    background-image: url(../../assets/img/Fundo_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px 0px 0px;
+    gap: 100px;
+
+    & img{
+        width: 40%;
+    }
+
+    & .texto{
+
+        display: flex;
+        flex-direction: column;
+
+        & h1{
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+        }
+
+        & p{
+            margin-top: 10%;
+            font-size: 32px;
+            color: white;
+            font-weight: 530px;
+        }
+
+        & button{
+                margin-top: 10%;
+                font-size: 24px;
+                padding: 20px;
+                width: 70%;
+                border-radius: 10px;
+                background-color: #0F7A50;
+                color: #FFF;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .sobre{
+        & img{
+            display: none;
+        } 
+
+        & .texto{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+                & p{
+            margin-top: 5%;
+            }   
+
+                 & button{
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+}
